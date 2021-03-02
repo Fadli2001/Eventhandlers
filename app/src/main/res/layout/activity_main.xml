@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50sp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/tv_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="BIODATA"
+        android:textColor="@color/hitam"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bio"
+        android:layout_marginTop="40dp"
+        android:text="Nama   : "
+        android:textColor="@color/hitam"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bio"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/tv_nama" />
+    <TextView
+        android:id="@+id/tv_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nama"
+        android:layout_marginTop="10dp"
+        android:text="Alamat : "
+        android:textColor="@color/hitam"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/et_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nama"
+        android:layout_toRightOf="@+id/tv_alamat" />
+    <TextView
+        android:id="@+id/tv_ttl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_alamat"
+        android:layout_marginTop="10dp"
+        android:text="TTL       : "
+        android:textColor="@color/hitam"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/et_ttl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_alamat"
+        android:layout_toRightOf="@+id/tv_ttl" />
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ttl"
+        android:layout_marginTop="10dp"
+        android:text="Email    : "
+        android:textColor="@color/hitam"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_toRightOf="@+id/tv_email"
+        android:layout_below="@id/tv_ttl"
+        android:inputType="textEmailAddress" />
+    <TextView
+        android:id="@+id/tv_nohp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_email"
+        android:layout_marginTop="10dp"
+        android:text="No. HP : "
+        android:textColor="@color/hitam"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/et_nohp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/tv_email"
+        android:layout_toRightOf="@+id/tv_nohp"
+        android:inputType="date" />
+    <Button
+        android:id="@+id/btn_pindah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_below="@+id/tv_nohp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/biru" />
+</RelativeLayout>
